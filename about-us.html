@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | ZAFAR ALI ABRO — Claudius Law Firm</title>
+  <meta name="description" content="Meet ZAFAR ALI ABRO, Advocate High Court Karachi and Managing Partner at Claudius Law Firm." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .ci-tagline {
+      font-family: var(--font-heading);
+      font-size: 1rem;
+      font-style: italic;
+      color: var(--primary);
+      margin-top: 1.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .ci-signature {
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-top: 0.35rem;
+    }
+
+    .team-grid-inline {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    .team-card-inline {
+      flex: 0 1 380px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      padding: 2.5rem 2rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: background var(--transition);
+    }
+
+    .team-card-inline:hover { background: var(--bg-secondary); }
+
+    .team-img-wrap-inline {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: 1.5rem;
+      border: 2px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .team-img-inline { width: 100%; height: 100%; object-fit: cover; object-position: center 0%; }
+
+    .team-name-inline { font-size: 1.125rem; margin-bottom: 0.25rem; }
+
+    .team-role-inline { font-size: 0.8125rem; color: var(--primary); font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 0.5rem; }
+
+    .team-spec-inline { font-size: 0.75rem; color: var(--text-secondary); display: block; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border); width: 100%; }
+
+    .team-bio-inline { font-size: 0.875rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.5rem; flex: 1; }
+
+    .team-btn-inline { font-size: 0.8125rem; padding: 0.5rem 1.5rem; }
+
+    @media (max-width: 768px) {
+      .team-grid-inline { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+  <!-- ============ NAVIGATION ============ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="./" class="nav-logo">
+        <div class="nav-logo-icon">
+          <img src="Logo1.png" alt="Claudius Law Firm" class="nav-logo-img">
+        </div>
+        <div class="nav-logo-text">
+          <span class="nav-logo-title">Claudius</span>
+          <span class="nav-logo-sub">Law Firm</span>
+        </div>
+      </a>
+      <ul class="nav-menu-desktop">
+        <li><a href="./" class="nav-link">Home</a></li>
+        <li><a href="about-us.html" class="nav-link active">About Us</a></li>
+        <li><a href="./#practice-areas" class="nav-link">Practice Areas</a></li>
+        <li><a href="./#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="nav-social">
+            <a href="https://www.facebook.com/share/1FGUd4eJkK/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="https://www.instagram.com/zafar_aliabro?utm_source=qr&igsh=MWpoaGhucjFzamMyeg==" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></a>
+            <a href="https://www.linkedin.com/in/zafar-ali-abro-68202619?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        </div>
+        <a href="https://wa.me/923042034898" target="_blank" rel="noopener noreferrer" class="nav-cta">Free Consultation</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <ul class="nav-menu" id="navMenu">
+    <li class="nav-menu-close-li"><button class="nav-menu-close" id="navMenuClose" aria-label="Close menu"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button></li>
+    <li><a href="./" class="nav-link">Home</a></li>
+    <li><a href="about-us.html" class="nav-link active">About Us</a></li>
+    <li><a href="./#practice-areas" class="nav-link">Practice Areas</a></li>
+    <li><a href="./#contact" class="nav-link">Contact</a></li>
+  </ul>
+  </header>
+
+  <main>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol class="breadcrumb-list">
+        <li><a href="./">Home</a></li>
+        <li class="current">About Us</li>
+      </ol>
+    </nav>
+    <!-- ============ HERO ============ -->
+  <section class="about-hero">
+    <div class="container">
+      <div class="about-hero-grid">
+        <div class="about-hero-image">
+          <img src="adv-zafar-ali-abro.png" alt="ZAFAR ALI ABRO" />
+        </div>
+        <div class="about-hero-content">
+          <h1 class="ah-title">ZAFAR ALI ABRO</h1>
+          <p class="ah-subtitle">Advocate High Court Karachi</p>
+          <p class="ah-tagline">MANAGING PARTNER | CLAUDIUS LAW FIRM KARACHI</p>
+          <div class="ah-bar" style="display:flex;flex-direction:column;gap:0.35rem;margin-bottom:1.25rem">
+            <span style="font-size:0.75rem;font-weight:600;color:var(--primary);letter-spacing:0.04em;text-transform:uppercase">Member at:</span>
+            <span style="display:flex;align-items:center;gap:0.5rem;font-size:0.8125rem;color:var(--text-secondary)"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:15px;height:15px;color:var(--primary);flex-shrink:0"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4"/></svg>Karachi Bar Association</span>
+            <span style="display:flex;align-items:center;gap:0.5rem;font-size:0.8125rem;color:var(--text-secondary)"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:15px;height:15px;color:var(--primary);flex-shrink:0"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><path d="M9 9v1"/><path d="M9 13v1"/><path d="M9 17v1"/></svg>Sindh High Court Bar Association</span>
+          </div>
+          <div class="ah-social" style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1.25rem">
+            <span style="font-size:0.75rem;font-weight:600;color:var(--primary);letter-spacing:0.04em;text-transform:uppercase">Follow:</span>
+            <a href="https://www.facebook.com/share/1FGUd4eJkK/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style="color:var(--text-secondary);transition:color 0.2s"><svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="https://www.instagram.com/zafar_aliabro?utm_source=qr&igsh=MWpoaGhucjFzamMyeg==" target="_blank" rel="noopener noreferrer" aria-label="Instagram" style="color:var(--text-secondary);transition:color 0.2s"><svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></a>
+            <a href="https://www.linkedin.com/in/zafar-ali-abro-68202619?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" style="color:var(--text-secondary);transition:color 0.2s"><svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          </div>
+          <p class="ah-desc">Zafar Ali Abro is an Advocate of the High Court at Karachi and the Managing Partner of Claudius Law Firm Karachi. With a multidisciplinary academic background in business administration, public administration, and law, he combines legal expertise with strategic and administrative insight to provide comprehensive legal services. He is actively engaged in criminal, civil, constitutional, and corporate legal matters, representing clients before various courts and legal forums. Known for his professional integrity, dedication, and client-focused approach, he strives to achieve effective legal solutions while upholding the highest standards of the legal profession.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRACTICE AREAS ============ -->
+  <section class="about-body-section">
+    <div class="container">
+      <div class="section-header reveal" style="text-align:left;max-width:100%;margin:0 0 2.5rem">
+        <span class="section-label">Practice Areas</span>
+        <h2 class="heading-lg">Areas of Expertise</h2>
+      </div>
+      <div class="pa-mini-grid reveal">
+        <div class="pa-mini-item">Criminal Law</div>
+        <div class="pa-mini-item">Banking Law</div>
+        <div class="pa-mini-item">Alternative Dispute Resolution (ADR)</div>
+        <div class="pa-mini-item">Property Issues</div>
+        <div class="pa-mini-item">Illegal Dispossession</div>
+        <div class="pa-mini-item">Civil Law</div>
+        <div class="pa-mini-item">Constitution</div>
+        <div class="pa-mini-item">Services Matters</div>
+        <div class="pa-mini-item">Family Matters</div>
+        <div class="pa-mini-item">Corporate &amp; Commercial Law</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROFILE BODY ============ -->
+  <section class="edu-section">
+    <div class="container">
+      <div class="about-body-grid">
+        <div class="about-body-text reveal-left">
+          <span class="section-label">Profile</span>
+          <h2 class="heading-lg" style="margin-bottom:1.5rem">About ZAFAR ALI ABRO</h2>
+          <p>ZAFAR ALI ABRO is a distinguished Advocate of the High Court of Karachi, bringing over 9 years of comprehensive legal experience to every case he handles. As the Managing Partner of Claudius Law Firm, he has built a reputation for excellence across a diverse range of practice areas.</p>
+          <p>Throughout his career, he has successfully represented clients in complex criminal matters, high-stakes civil litigation, constitutional petitions, and intricate property disputes. His approach combines meticulous preparation with aggressive courtroom advocacy, ensuring that no stone is left unturned in pursuit of justice.</p>
+          <p>Beyond the courtroom, ZAFAR ALI ABRO is committed to alternative dispute resolution, believing that strategic mediation and arbitration can often deliver superior outcomes for clients while preserving relationships and resources.</p>
+        </div>
+        <div class="about-body-cards reveal-right">
+          <div class="about-card">
+            <h3>COMMITMENT</h3>
+            <p>He is committed to upholding the rule of law and providing effective, ethical, and practical legal solutions to individuals, business, and organizations.</p>
+            <p style="color:var(--primary);font-family:var(--font-heading);font-style:italic;margin-top:0.75rem;font-size:0.9rem">"Committed to Justice. Driven by Integrity. Focused on Results."</p>
+          </div>
+          <div class="about-card">
+            <h3>PRACTICE PHILOSOPHY</h3>
+            <div class="pp-item"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:16px;height:16px;color:var(--primary);flex-shrink:0"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Client-Centered Approach</span></div>
+            <div class="pp-item"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:16px;height:16px;color:var(--primary);flex-shrink:0"><path d="M14.5 17.5L3 6V3h3l11.5 11.5"/><path d="M13 19l6-6"/><path d="M16 16l4 4"/><path d="M19 21l2-2"/></svg><span>Strategic &amp; Practical Solutions</span></div>
+            <div class="pp-item"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:16px;height:16px;color:var(--primary);flex-shrink:0"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>Integrity &amp; Confidentiality</span></div>
+            <div class="pp-item"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:16px;height:16px;color:var(--primary);flex-shrink:0"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><span>Excellence in Advocacy</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section class="about-body-section">
+    <div class="container">
+      <div class="section-header reveal" style="text-align:center;max-width:100%;margin:0 auto 2.5rem">
+        <span class="section-label">Education &amp; Credentials</span>
+        <h2 class="heading-lg">Academic Background</h2>
+      </div>
+      <div class="edu-list reveal" style="margin:0 auto;text-align:center">
+        <div class="edu-item">
+          <div class="edu-info">
+            <h3>Bachelor of Business Administration (BBA)</h3>
+            <p>Shah Abdul Latif University, Khairpur Mirs</p>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-info">
+            <h3>Master of Public Administration (MPA)</h3>
+            <p>Quaid-i-Azam University, Islamabad</p>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-info">
+            <h3>Bachelor of Laws (LL.B.)</h3>
+            <p>Shah Abdul Latif University, Khairpur Mirs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OUR TEAM ============ -->
+  <section class="about-body-section" style="background:var(--bg)">
+    <div class="container">
+      <div class="section-header reveal" style="text-align:center;max-width:100%;margin:0 auto 2.5rem">
+        <span class="section-label">Our Team</span>
+        <h2 class="heading-lg">Meet Our Legal Team</h2>
+      </div>
+      <div class="team-grid-inline reveal">
+        <div class="team-card-inline">
+          <div class="team-img-wrap-inline">
+            <img src="Shahab Aftab Tunio.jpg" alt="Advocate Shahab Aftab Tunio" class="team-img-inline" />
+          </div>
+          <h3 class="team-name-inline">Advocate<br>Shahab Aftab Tunio</h3>
+          <span class="team-role-inline">Partner — Claudius Law Firm</span>
+          <span class="team-spec-inline">Criminal, Customs &amp; Property Law</span>
+          <p class="team-bio-inline">Partner at Claudius Law Firm Karachi, Advocate High Court dedicated to professional legal services in criminal, customs, and property-related matters with strong courtroom experience.</p>
+          <a href="adv-shahab-aftab-tunio.html" class="btn btn-primary team-btn-inline">View Profile</a>
+        </div>
+        <div class="team-card-inline">
+          <div class="team-img-wrap-inline">
+            <img src="Azhar Ali Chachar.jpg" alt="Advocate Azhar Ali Chachar" class="team-img-inline" />
+          </div>
+          <h3 class="team-name-inline">Advocate<br>Azhar Ali Chachar</h3>
+          <span class="team-role-inline">Advocate High Court of Sindh</span>
+          <span class="team-spec-inline">Civil Litigation &amp; Legal Research</span>
+          <p class="team-bio-inline">Advocate practicing before the High Court of Sindh with a background in both law and English literature, bringing analytical rigor and strong communication skills to every case.</p>
+          <a href="adv-azhar-ali-chachar.html" class="btn btn-primary team-btn-inline">View Profile</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT INFO ============ -->
+  <section class="contact-info-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="heading-lg"><span style="color:var(--primary)">Contact Advocate</span><br>ZAFAR ALI ABRO</h2>
+      </div>
+      <div class="contact-info-grid">
+        <div class="contact-info-list reveal-left">
+          <div class="ci-item">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Suit No. 231 - 232, 3rd Floor Glass Tower Near Teen Talwar, Karachi</span>
+          </div>
+          <div class="ci-item">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>+92 304 2034898<br><span style="font-size:0.75rem;color:var(--text-secondary)">Advocate Zafar Ali Abro</span></span>
+          </div>
+          <div class="ci-item">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>+92 307 3700100<br><span style="font-size:0.75rem;color:var(--text-secondary)">Advocate Shahab Aftab Tunio</span></span>
+          </div>
+          <div class="ci-item">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:zafar.abro1@gmail.com" style="color:inherit;text-decoration:none">zafar.abro1@gmail.com</a>
+          </div>
+          <div class="ci-item">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Mon–Fri 9AM – 7PM | Sat 10AM – 4PM</span>
+          </div>
+          <div class="ci-tagline">"Justice, Integrity &amp; Professional Excellence."</div>
+          <div class="ci-signature">— Advocate Zafar Ali Abro</div>
+          <div class="ci-socials">
+            <a href="https://www.facebook.com/share/1FGUd4eJkK/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="https://www.instagram.com/zafar_aliabro?utm_source=qr&igsh=MWpoaGhucjFzamMyeg==" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></a>
+            <a href="https://www.linkedin.com/in/zafar-ali-abro-68202619?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a href="https://wa.me/923042034898" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+          </div>
+        </div>
+        <div class="contact-info-map reveal-right">
+          <div class="map-card">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d231917.148201814!2d66.985001!3d24.860735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e06651d4bbf%3A0x9cf92f44555a0c23!2sKarachi%2C%20Pakistan!5e0!3m2!1sen!2s!4v1" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="./" class="footer-logo">
+            <div class="nav-logo-icon"><img src="Logo2.png" alt="Claudius Law Firm" class="nav-logo-img-footer"></div>
+          </a>
+          <p>Strategic legal representation built on experience, dedication, and proven results. We fight for justice. You win.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/share/1FGUd4eJkK/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="https://www.instagram.com/zafar_aliabro?utm_source=qr&igsh=MWpoaGhucjFzamMyeg==" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></a>
+            <a href="https://www.linkedin.com/in/zafar-ali-abro-68202619?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Practice Areas</h4>
+          <ul>
+            <li><a href="./#practice-areas">Criminal Law</a></li>
+            <li><a href="./#practice-areas">Banking Law</a></li>
+            <li><a href="./#practice-areas">Civil Law</a></li>
+            <li><a href="./#practice-areas">Property Issues</a></li>
+            <li><a href="./#practice-areas">Family Matters</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="./">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="./#practice-areas">Practice Areas</a></li>
+            <li><a href="./#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Information</h4>
+          <ul class="footer-contact">
+            <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Suit No. 231 - 232, 3rd Floor Glass Tower Near Teen Talwar, Karachi</span></li>
+            <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>+92 304 2034898<br><span style="font-size:0.75rem;color:var(--text-secondary)">Advocate Zafar Ali Abro</span></span></li>
+            <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>+92 307 3700100<br><span style="font-size:0.75rem;color:var(--text-secondary)">Advocate Shahab Aftab Tunio</span></span></li>
+            <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>zafar.abro1@gmail.com</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Claudius Law Firm. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms</a>
+          <a href="#">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <a href="https://wa.me/923042034898" target="_blank" rel="noopener noreferrer" class="whatsapp-float whatsapp-hidden" aria-label="Chat on WhatsApp">
+    <img src="Wtsapp.png" alt="" class="whatsapp-icon">
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
